@@ -110,6 +110,18 @@ All values > 0.05 significant at p < 0.05 (permutation test). "--" = complete no
 
 82.1% of model–racial-group pairs (23/28) refuse or hedge direct questions about racial scent differences yet produce statistically significant recipe differentiation.
 
+### P3: Spatial Context Leakage (JSD from scene-only baseline)
+
+| Model | White | Black | Asian | M.East | Mean |
+|-------|-------|-------|-------|--------|------|
+| GPT-4o | .004 | .017 | .062 | .080 | .041 |
+| GPT-5.1 | .009 | .019 | .046 | .053 | .032 |
+| Claude-S4 | .010 | .015 | .019 | .052 | .024 |
+| Gem-2.5fl | .017 | .022 | .037 | .061 | .034 |
+| **Grand mean** | **.010** | **.018** | **.041** | **.062** | **.033** |
+
+White/Black are largely invisible in spatial contexts (JSD ≤ 0.018), while Asian and Middle Eastern mentions induce measurable shifts.
+
 ### P4: Hard-Trap Selection (words with no fragrance interpretation)
 
 | Model | Neutral | Black | Elderly | Key finding |
